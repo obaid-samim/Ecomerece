@@ -1,0 +1,20 @@
+<header>
+    <div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+        <i style="font-size: 30px;" class="fas fa-shipping-fast"></i>&nbsp;
+        <strong> E-CART</strong>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search product">
+        </div>
+        <span class="fas fa-search search-icon"></span>
+        </div>
+          <!--RouterLink is a built-in Angular Directive that lets you link to specific routes in your app.-->
+        <button routerLink="cart" class="btn btn-primary">
+            <i style="font-size: 30px;" class="fa fa-cart-plus"></i>
+            <div class="badge bg-danger">{{totalItemNumber}}</div>
+        </button>
+    </div>
+</header>
+
+
+<h2 class="text-center">Add To Shoping Cart</h2>

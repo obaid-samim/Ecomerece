@@ -1,0 +1,43 @@
+<div class="cart-top container-fluid">
+    <div class="container d-flex">
+    <div class="items">
+        <a>
+            <img style="width: 35%; margin-top: 21px;" src="https://image3.mouthshut.com/images/ImagesR/imageuser_m/2022/4/925640223-8829045-1.JPG?rnd=69469">
+        </a>
+        <h6>All Products</h6>
+    </div>
+    <div class="items">
+        <a>
+            <img style="width:35%; margin-top: 21px;" src="https://image3.mouthshut.com/images/ImagesR/imageuser_m/2020/5/925640223-3393499-1.JPG?rnd=69469">
+        </a>
+        <h6>All Products</h6>
+    </div>
+    <div class="items">
+        <a>
+            <img style="width: 35%; margin-top: 21px;" src="https://image3.mouthshut.com/images/ImagesR/imageuser_m/2022/4/925640223-8829045-1.JPG?rnd=69469">
+        </a>
+        <h6>All Products</h6>
+    </div>
+    <div class="items">
+        <a routerLink="">
+            <img style="width:35%; margin-top: 21px;" src="https://image3.mouthshut.com/images/ImagesR/imageuser_m/2020/5/925640223-3393499-1.JPG?rnd=69469">
+        </a>
+        <h6>All Products</h6>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+         <div class="card col-md-3">
+             <img src="{{item.image}}" alt="">
+             <h5 class="itemdata">{{item.title}}</h5>
+             <p class="itemdata">{{item.description}}</p>
+             <p><strong>Price:</strong>${{item.price}}</p>
+             <p>{{item.category}}</p>
+             <button class="btn btn-primary" (click)="addtoCart(item)">Add To Cart</button>
+         </div>
+        </ng-container>
+    </div>
+</div>
